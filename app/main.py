@@ -21,6 +21,10 @@ async def user_create(user: UserIn):
     Add user data to json file
     """
     try:
+        print("hiiii")
+        print(services)
+        print(user)
+        print(Userin)
         services.add_userdata(user.dict())
     except:
         return {"success": False}
